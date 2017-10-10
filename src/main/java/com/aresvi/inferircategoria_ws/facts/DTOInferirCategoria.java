@@ -7,14 +7,26 @@ public class DTOInferirCategoria {
 	private double porcentajeNivel3;
 	private double porcentajeNivel2;
 	private double porcentajeNivel1;
-	private boolean categorizado;
+	private int nivelInformatizacion;
 	
-	public boolean isCategorizado() {
-		return categorizado;
+	public int getNivelInformatizacion() {
+		return nivelInformatizacion;
 	}
 
-	public void setCategorizado(boolean categorizado) {
-		this.categorizado = categorizado;
+	public void setNivelInformatizacion(int nivelInformatizacion) {
+		this.nivelInformatizacion = nivelInformatizacion;
+	}
+
+	public DTOInferirCategoria(double porcentajeNoRequerido, double porcentajeNivel5, double porcentajeNivel4,
+			double porcentajeNivel3, double porcentajeNivel2, double porcentajeNivel1, int nivelInformatizacion) {
+		super();
+		this.porcentajeNoRequerido = porcentajeNoRequerido;
+		this.porcentajeNivel5 = porcentajeNivel5;
+		this.porcentajeNivel4 = porcentajeNivel4;
+		this.porcentajeNivel3 = porcentajeNivel3;
+		this.porcentajeNivel2 = porcentajeNivel2;
+		this.porcentajeNivel1 = porcentajeNivel1;
+		this.nivelInformatizacion = nivelInformatizacion;
 	}
 
 	public DTOInferirCategoria(double porcentajeNoRequerido, double porcentajeNivel5, double porcentajeNivel4,

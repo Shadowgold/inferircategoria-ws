@@ -32,9 +32,10 @@ public class InferirCategoriaController {
             @RequestParam(required = true) double porcentajeNivel4,
             @RequestParam(required = true) double porcentajeNivel3,
             @RequestParam(required = true) double porcentajeNivel2,
-            @RequestParam(required = true) double porcentajeNivel1) {
+            @RequestParam(required = true) double porcentajeNivel1,
+            @RequestParam(required = true) int nivelInformatizacion) {
 
-    	DTOInferirCategoria dtoIC = new DTOInferirCategoria(porcentajeNoRequerido,porcentajeNivel5,porcentajeNivel4,porcentajeNivel3,porcentajeNivel2,porcentajeNivel1);
+    	DTOInferirCategoria dtoIC = new DTOInferirCategoria(porcentajeNoRequerido,porcentajeNivel5,porcentajeNivel4,porcentajeNivel3,porcentajeNivel2,porcentajeNivel1,nivelInformatizacion);
 
         log.debug("DTO recibido: " + dtoIC);
         
